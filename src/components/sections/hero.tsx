@@ -27,8 +27,8 @@ export function HeroSection() {
               </Button>
             </div>
           </div>
-          <div className="flex flex-col gap-6 rounded-[36px] border border-white/60 bg-white/90 p-8 shadow-elevated backdrop-blur-sm">
-            <SegmentedControl />
+          <div className="flex flex-col gap-6">
+            {/* <SegmentedControl /> */}
             <HeroSearchCard />
           </div>
         </div>
@@ -37,27 +37,27 @@ export function HeroSection() {
   )
 }
 
-function SegmentedControl() {
-  const segments = ['Explore', 'Research']
-  return (
-    <div className="inline-flex w-full items-center justify-between rounded-full border border-muted bg-muted/40 p-1 text-sm font-semibold text-muted-foreground shadow-inner-smooth sm:w-auto">
-      {segments.map((segment, index) => (
-        <button
-          key={segment}
-          type="button"
-          className={cn(
-            'flex-1 rounded-full px-6 py-2 transition-all',
-            index === 0
-              ? 'bg-primary text-primary-foreground shadow-subtle'
-              : 'hover:text-primary',
-          )}
-        >
-          {segment}
-        </button>
-      ))}
-    </div>
-  )
-}
+// function SegmentedControl() {
+//   const segments = ['Explore', 'Research']
+//   return (
+//     <div className="inline-flex w-full items-center justify-between rounded-full border border-muted bg-muted/40 p-1 text-sm font-semibold text-muted-foreground shadow-inner-smooth sm:w-auto">
+//       {segments.map((segment, index) => (
+//         <button
+//           key={segment}
+//           type="button"
+//           className={cn(
+//             'flex-1 rounded-full px-6 py-2 transition-all',
+//             index === 0
+//               ? 'bg-primary text-primary-foreground shadow-subtle'
+//               : 'hover:text-primary',
+//           )}
+//         >
+//           {segment}
+//         </button>
+//       ))}
+//     </div>
+//   )
+// }
 
 function HeroSearchCard() {
   return (
@@ -68,7 +68,7 @@ function HeroSearchCard() {
           <Input
             placeholder="What do you want know ?"
             aria-label="Search BrightQuery"
-            className="h-14 rounded-2xl border border-muted bg-white pl-12 pr-6 text-base shadow-inner-smooth placeholder:text-muted-foreground/80"
+            className="h-14 rounded-2xl border-none bg-transparent pl-12 pr-6 text-base shadow-inner-smooth placeholder:text-muted-foreground/80"
           />
         </div>
         <div className="flex items-center justify-between">
