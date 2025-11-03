@@ -9,8 +9,8 @@ export function LoginPage() {
     <div className="flex min-h-screen flex-col bg-background">
       <SiteHeader />
       <main className="flex-1">
-        <section className="relative flex min-h-[calc(100vh-5rem)] items-center overflow-hidden border-b border-transparent bg-grid-soft">
-          <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white via-white/80 to-transparent" />
+        <section className="relative flex min-h-[calc(100vh-5rem)] items-center overflow-hidden border-b border-transparent bg-grid-soft bg-[length:56px_56px] bg-center">
+          <div className="absolute inset-0 -z-10 bg-[#EDF1FC]" />
           <div className="container grid items-center gap-12 py-6 sm:py-20 md:grid-cols-2 md:py-16 lg:gap-16">
             <div className="space-y-8">
               <div className="space-y-6">

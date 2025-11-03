@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Menu, Search, X } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { cn } from '@/lib/utils'
+import { Button } from '../../components/ui/button'
+import { cn } from '../../lib/utils'
 
 const navigationItems = [
   'Economy',
@@ -18,7 +18,7 @@ export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-40 border-b border-transparent bg-background/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-transparent bg-[#EDF1FC] backdrop-blur">
       <div className="container flex h-20 items-center justify-between gap-6">
         <div className="flex items-center gap-6 lg:gap-10">
           <Link

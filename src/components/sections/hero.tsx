@@ -1,13 +1,13 @@
 import type { ComponentType } from 'react'
-import { ArrowRight, Mic, Paperclip, Search, Send } from 'lucide-react'
+import { ArrowRight, Mic, Paperclip, Search } from 'lucide-react'
 import { Button } from '../../components/ui/button'
 import { Input } from '../../components/ui/input'
-import { cn } from '../..//lib/utils'
+import { cn } from '../../lib/utils'
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden border-b border-transparent bg-grid bg-cover bg-no-repeat">
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white via-white/80 to-transparent" />
+    <section className="relative overflow-hidden border-b border-transparent bg-grid-soft bg-[length:56px_56px] bg-center">
+      <div className="absolute inset-0 -z-10 bg-[#EDF1FC]" />
       <div className="container relative flex flex-col gap-12 py-16 sm:py-20 md:py-24">
         <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
           <div className="flex flex-col gap-8">
@@ -27,8 +27,8 @@ export function HeroSection() {
               </Button>
             </div>
           </div>
-          <div className="flex flex-col gap-6 rounded-[36px] border-none  p-8 shadow-card backdrop-blur">
-            {/* <SegmentedControl /> */}
+          <div className="flex flex-col gap-6 rounded-[36px] border border-white/60 bg-white/90 p-8 shadow-elevated backdrop-blur-sm">
+            <SegmentedControl />
             <HeroSearchCard />
           </div>
         </div>
@@ -61,14 +61,14 @@ function SegmentedControl() {
 
 function HeroSearchCard() {
   return (
-    <div className="space-y-6 rounded-[28px] border border-muted bg-white/95 p-6 shadow-2xl">
+    <div className="space-y-6 rounded-[28px] border border-muted bg-white/95 p-6 shadow-elevated">
       <div className="flex flex-col gap-4">
         <div className="relative">
           <Search className="absolute left-5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground/70" />
           <Input
             placeholder="What do you want know ?"
             aria-label="Search BrightQuery"
-            className="h-14 rounded-2xl border-none bg-white pl-12 pr-6 text-base shadow-none placeholder:text-muted-foreground/80"
+            className="h-14 rounded-2xl border border-muted bg-white pl-12 pr-6 text-base shadow-inner-smooth placeholder:text-muted-foreground/80"
           />
         </div>
         <div className="flex items-center justify-between">
@@ -81,7 +81,7 @@ function HeroSearchCard() {
             className="h-14 w-14 rounded-2xl bg-primary text-primary-foreground shadow-subtle"
             aria-label="Submit"
           >
-            <ArrowRight className="w-5 h-5" strokeWidth={3} />
+            <ArrowRight className="h-5 w-5" strokeWidth={2.5} />
           </Button>
         </div>
       </div>
