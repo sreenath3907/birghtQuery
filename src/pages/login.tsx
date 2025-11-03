@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { SiteFooter } from '@/components/layout/site-footer'
-import { SiteHeader } from '@/components/layout/site-header'
+import { Button } from '../components/ui/button'
+import { Input } from '../components/ui/input'
+import { SiteFooter } from '../components/layout/site-footer'
+import { SiteHeader } from '../components/layout/site-header'
 
 export function LoginPage() {
   return (
