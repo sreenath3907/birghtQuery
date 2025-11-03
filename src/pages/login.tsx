@@ -64,7 +64,7 @@ export function LoginPage() {
                         className="h-12 rounded-full border-muted bg-white px-5 text-sm shadow-inner-smooth placeholder:text-muted-foreground/70"
                       />
                     </div>
-                    <Button className="h-12 width-[100%]rounded-full text-base shadow-subtle">
+                    <Button className="h-12 w-fullrounded-full text-base shadow-subtle">
                       Login
                     </Button>
                   </form>
